@@ -30,7 +30,7 @@ set(CPACK_PACKAGE_VENDOR "Company_Name")
 set(CPACK_PACKAGE_CONTACT "https://github.com/Rogopl")
 set(CPACK_DEBIAN_PACKAGE_MAINTAINER "alf.ivan2002@gmail.com")
 set(CPACK_PACKAGE_DESCRIPTION "some program")
-set(CPACK_GENERATOR "DEB")
+set(CPACK_GENERATOR "RPM" "DEB")
 include(CPack)
 ```
 После этого всё работает и сборка на трэвисе проходит успешно
