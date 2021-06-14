@@ -1,0 +1,19 @@
+language: cpp
+
+script:
+- cd hello_world_application/
+- cmake . && cmake --build . && cmake --build . --target package
+- cmake . && cmake --build . && cmake --build . --target package_source
+- cd ..//solver_application/
+- cmake . && cmake --build . && cmake --build . --target package
+- cmake . && cmake --build . && cmake --build . --target package_source
+
+addons:
+  apt:
+    sources:
+      - george-edison55-precise-backports
+    packages:
+      - cmake
+      - cmake-data
+      - mingw-w64
+      - rpm
