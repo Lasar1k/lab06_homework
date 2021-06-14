@@ -7,7 +7,7 @@ language: cpp
 script:
 - cd hello_world_application/                                                # переходим в папку hello_world_application
 - cmake . && cmake --build . && cmake --build . --target package             # собираем симэйк, билд и создаём пакет
-- cmake . && cmake --build . && cmake --build . --target package_source      # то же с новым пакетом
+- cmake . && cmake --build . && cmake --build . --target package_source      # то же с другим пакетом
 - cd ..//solver_application/                                                 # здесь всё аналогично
 - cmake . && cmake --build . && cmake --build . --target package
 - cmake . && cmake --build . && cmake --build . --target package_source
